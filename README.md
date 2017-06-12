@@ -5,13 +5,17 @@
 # Information:
 
 - Designed for OS X 10.9+
-- Designed for Chrome & Chrome Cannary 40+
-- RadonChrome is a SIMBL extension for Mac OS X to redirect Chrome notifications to Notification Center.
-- Author: [mathcolo](https://github.com/mathcolo)
+- Designed for Chrome 40 - 58
+- RadonChrome is a mySIMBL extension for Mac OS X that changes Chrome notifications to use Notification Center instead of Chromes custom implementation.
+- Author:
+- [mathcolo](https://github.com/mathcolo)
+- Contributors :
+- [w0lfschild](https://github.com/w0lfschild)
+- [artemkochnev](https://github.com/artemkochnev)
 
 # Note
 
-- Chrome 47+ reintoroduces native notifications to Notification Center
+- Chrome 59 reintoroduces [native notifications to Notification Center](https://developers.google.com/web/updates/2017/05/nic59#macnot), making this plugin obsolete.
 
 # Installation:
 
@@ -23,3 +27,4 @@
 
 ### License
 MIT. See the included LICENSE file in the repository for more information.
+
