@@ -37,7 +37,6 @@
 }
 
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification {
-    
     id controller = nil;
     
     for(NSString *key in [notifications allKeys]) {

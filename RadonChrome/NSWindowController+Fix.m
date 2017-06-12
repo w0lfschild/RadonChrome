@@ -11,7 +11,6 @@
 @implementation NSWindowController (Fix)
 
 -(void)FIXshowWindow:(id)sender {
-    
     if(![NSStringFromClass([self class]) isEqualToString:@"MCPopupController"])return [self FIXshowWindow:sender];
     
     NSString *title = nil;
@@ -55,7 +54,6 @@
         [notification setValue:img forKey:@"_identityImage"];
         [notification setValue:@(NO) forKey:@"_identityImageHasBorder"];
     }
-    
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:singleton];
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];

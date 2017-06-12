@@ -13,10 +13,8 @@
 @implementation RadonChrome
 
 + (void)load {
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-
         SEL oldSelector = @selector(showWindow:);
         SEL newSelector = @selector(FIXshowWindow:);
         Class class = NSClassFromString(@"NSWindowController");
@@ -24,16 +22,11 @@
         Method oldMethod = class_getInstanceMethod(class, oldSelector);
         Method newMethod = class_getInstanceMethod(class, newSelector);
         
-        if(class_addMethod(class, oldSelector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod)))
-        {
+        if(class_addMethod(class, oldSelector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod))) {
             class_replaceMethod(class, newSelector, method_getImplementation(oldMethod), method_getTypeEncoding(oldMethod));
-        }
-        else
-        {
+        } else {
             method_exchangeImplementations(oldMethod, newMethod);
         }
-        
-        
     });
 }
 
