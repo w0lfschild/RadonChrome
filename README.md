@@ -8,10 +8,10 @@
 - Designed for Chrome 40 - 58
 - RadonChrome is a mySIMBL extension for Mac OS X that changes Chrome notifications to use Notification Center instead of Chromes custom implementation.
 - Author:
-- [mathcolo](https://github.com/mathcolo)
+    - [mathcolo](https://github.com/mathcolo)
 - Contributors :
-- [w0lfschild](https://github.com/w0lfschild)
-- [artemkochnev](https://github.com/artemkochnev)
+    - [w0lfschild](https://github.com/w0lfschild)
+    - [artemkochnev](https://github.com/artemkochnev)
 
 # Note
 
